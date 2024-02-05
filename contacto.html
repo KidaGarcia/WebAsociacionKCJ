@@ -15,8 +15,8 @@
     <header>
         <a href="./index.html"><img id="logo" src="./media/D20Ico.ico" alt="Logo de Iniciativa Crítica" height="90px"></a>
         <h1 id="TituloSuperior">Contacta con Nosotros</h1>
-        <a class="RRSS" href="https://twitter.com"><img src="./media/TwitterIcon.ico" alt="Enlace a X(Twitter)" height="40px"></a>
-        <a class="RRSS" href="https://www.facebook.com"><img src="./media/FBLogo.ico" alt="Enlace a facebook" height="40px"></a>
+        <!--<a class="RRSS" href="https://twitter.com"><img src="./media/TwitterIcon.ico" alt="Enlace a X(Twitter)" height="40px"></a> /!-->
+         <!--<a class="RRSS" href="https://www.facebook.com"><img src="./media/FBLogo.ico" alt="Enlace a facebook" height="40px"></a>/!-->
     </header>
     <nav>
         <a class="menuSuperior" href="./index.html">Inicio</a>
@@ -31,19 +31,72 @@
     <main>
 
         <form method="get">
-
-            <fieldset>
-
-                <legend>Datos Personales</legend>
-                
-
-
-            </fieldset>
+        <div class="form-login">
+            <div class="box-logUser">
+                <label id="Usuario">Usuario</label>
+                <input type="text" id="UsuarioBox" required>
+            </div>
 
 
+            <div class="box-logContra">
+                <label id="contrasena">Contraseña</label>
+                <input type="password" id="contrasenaBox" required>
+            </div>
+
+            <div class="box-logRecordar">
+                <input type="checkbox" name="recordar" id="recordar">
+                <label id="checkRecordatorio">Recordar Usuario</label>
+            </div>
+
+            <div class="box-logForgot">
+                <a href="#">Olvidaste la contraseña?</a>
+            </div>
+
+            <div class="box-logLogin"> 
+                <button type="submit" name="Login">Iniciar</button>
+            </div>
+
+            <div class="box-logRegistro">
+                 <p>No tienes cuenta?</p><a href="#">Registrate</a>
+            </div>
+        </div>
+
+            
 
 
 
+
+        <div class="form-registro">
+            
+            <div>
+                <label id="Usuario">Usuario</label>
+                <input type="text" id="UsuarioBox" required>
+            </div>
+            
+            <div class="box-email">
+                <label id="emailText">Email</label>
+                <input type="email"  id="email">
+            </div>
+
+             <div>
+                <label id="contrasena">Contraseña</label>
+                <input type="password" id="contrasenaBox" required>
+            </div>
+    
+            <div>
+                <input type="checkbox" name="cookys" id="cookys">
+                <label id="checkCookys">Estoy de acuerdo con los terminos y condiciones</label>
+            </div>
+    
+    
+            <div class="box-login"> 
+                <button type="submit" name="Login">Registro</button>
+            </div>
+    
+            <div class="box-registro">
+                <p>Ya tienes cuenta?</p><a href="#">Iniciar Sesión</a>
+            </div>
+        </div>
         </form>
         
     </main>
