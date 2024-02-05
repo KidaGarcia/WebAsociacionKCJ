@@ -103,9 +103,11 @@ main{
     background-image: url("../media/LLamadaBackground.jpg");
     background-size: cover;
 }
+
+
 #Sec4{
     grid-column: 1/4;
-    grid-row: 2;
+    grid-row: 3;
     text-align: center;
 
     background-image: url("../media/HomeBrewBackground.jpeg");
@@ -113,8 +115,44 @@ main{
 }
 article{
     padding: 0px 20px;
-    text-shadow: 0 0 2 black;
+    text-shadow: 0 0 4px black;
 
+}
+.mostrarDatos{
+    grid-column: 1/4;
+}
+
+/*Textos alternativos*/
+#mostrarDND{
+
+    display: none;
+    color: black;
+    background-color: white;
+
+    text-shadow: 0 0 10px black;
+    box-shadow: 0 0 3px black;
+
+    padding: 1vw;
+}
+#mostrarVampiro{
+    display: none;
+    color: black;
+    background-color: white;
+
+    text-shadow: 0 0 10px black;
+    box-shadow: 0 0 3px black;
+
+    padding: 1vw;
+}
+#mostrarLlamada{
+    display: none;
+    color: black;
+    background-color: white;
+
+    text-shadow: 0 0 10px black;
+    box-shadow: 0 0 3px black;
+
+    padding: 1vw;
 }
 
 footer{
