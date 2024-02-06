@@ -1,22 +1,20 @@
 body{
     background-color: rgb(43, 43, 43);
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url(/media/_445ed15b-72bd-49c5-9eae-88c9d673339a.jpeg);
+    background-image:url(/media/_445ed15b-72bd-49c5-9eae-88c9d673339a.jpeg);
     background-size: cover;
+    background-repeat: no-repeat;
 
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 header{
-    /**background-color: rgb(107, 19, 19);**/
-    /**z-index: 5;**/
+    z-index: 5;
     position: relative;
     top: 0;
-    /**width: 100vw;**/
     height: max-content;
     margin-bottom: auto;
-    /**min-height: 5vw;**/
+    min-height: 5vw;
 
 }
 /**.RRSS{
@@ -37,28 +35,23 @@ nav{
     text-align: center;
     cursor: pointer;
     font-weight: 500;
-    margin-left: 1300px;
-    bottom: 50px;
 
 }
+
+.boxNav{
+    margin-left: 65vw;
+    max-width: 100%;
+    bottom: 60px;
+    
+}
 nav a{
-    /**background-color:rgb(107, 19, 19);
-    color: white;
-
-    text-decoration: none;
-
-    border-style: solid;
-    border-color: rgb(68, 0,0);
-    border-width: 2px;
-
-    padding: 10px 3vw;
-    **/
+   
     color: white;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 40px;
     font-size: 1.4em;
     position: relative;
+    margin: 15px;
 }
 
 nav a::after{
@@ -91,37 +84,11 @@ nav a:hover::after{
 main{
     margin: auto;
     position: relative;
-    top: 3vw;
+    margin-top: 3vw;
     width: 70vw;
     height: 90vh;
     max-height: fit-content;
     flex: 1;
-
-
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 1vw;
-    grid-auto-rows: minmax(100px,auto);
-    margin-left: 750px;
-}
-.secciones{
-    color: white;
-    margin: 1vw;
-    padding: 4vh 0 10vh 0;
-    text-shadow: 0 0 10px black;
-    box-shadow: 0 0 3px black;
-}
-#Sec1{
-    grid-column: 1;
-    grid-row: 1;
-    text-align: center;
-
-    background-image: url("../media/DNDBackground.jpeg");
-    background-size: cover;
-
-
-
-    
 }
 
 
@@ -137,16 +104,65 @@ main .boxForm{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 440px;
+    overflow: hidden;
+    transition: height .2s ease;
 }
 
-.formularioLogueo{
+    .boxForm.active {
+        height: 520px;
+    }
+
+    .boxForm .formularioLogeo{
+
+        transition: transform .18s ease;
+        transform: translateX(0);
+
+    }
+
+
+    .boxForm.active .formularioLogeo {
+        transition: none;
+        transform: translateX(-400px);
+    }
+
+    .boxForm.active .formRegistro {
+        position: absolute;
+        transition: none;
+        transform: translateX(400px);
+    }
+
+
+    .boxForm .formRegistro{
+        position: absolute;
+        transform: translateX(400px);
+    }
+
+    .boxForm .iconoCierre{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45px;
+        height: 45px;
+        background: #162938;
+        font-size: 2em;
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 20px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+.formularioLogeo{
     width: 100%;
     padding: 40px;
 }
 
-.formularioLogueo h2{
+.formularioLogeo h2{
     font-size: 2em;
-    color: #972e1b;
+    color:#162938;
     text-align: center;
 }
 
@@ -203,7 +219,7 @@ main .boxForm{
     font-size: .9em;
     color: #162938;
     font-weight: 500;
-    margin: -15px 0 15px;
+    margin: -15px 0px 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -212,9 +228,18 @@ main .boxForm{
     accent-color: #162938;
     margin-right: 3px;
 }
+
+
+.boxLogRecordar label {
+    accent-color: #162938;
+    padding-bottom: 10px;
+}
+
+
 .boxLogRecordar a{
     color: #162938;
     text-decoration: none;
+    padding-left: 50px;
 }
 
 .boxLogRecordar a:hover{
@@ -246,6 +271,7 @@ main .boxForm{
     color: #162938;
     text-decoration: none;
     font-weight: 600;
+    padding-left: 20px;
 }
 
 .boxLogRegistro a:hover{
@@ -253,36 +279,163 @@ main .boxForm{
 }
 
 
+/**Segunda parte del formulario**/
 
-#Sec2{
-    grid-column: 2;
-    grid-row: 1;
+
+
+
+
+
+
+.formRegistro{
+    width: 100%;
+    padding: 40px;
+}
+
+.formRegistro h2{
+    font-size: 2em;
+    color:#162938;
     text-align: center;
-
-    background-image: url("../media/VampireBackground.jpg");
-    background-size: cover;
 }
-#Sec3{
-    grid-column: 3;
-    grid-row: 1;
+
+.formRegUser, .boxEmail, .boxRegContra{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.formRegUser label, .boxRegContra label, .boxEmail label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.formRegUser input:focus~label, .formRegUser input:valid~label{
+    top: -5px;
+}
+
+.boxRegContra input:focus~label, .boxRegContra input:valid~label{
+    top: -5px;
+}
+
+
+.boxEmail input:focus~label, .boxEmail input:valid~label{
+    top: -5px;
+}
+
+.formRegUser input, .boxRegContra input, .boxEmail input {
+    width:100% ;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+
+}
+
+.formRegUser .icon, .boxRegContra .icon, .boxEmail .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;  
+    color: #162938;
+    line-height: 57px;
+}
+
+.boxRegCookys{
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxRegCookys label input{
+    accent-color: #162938;
+    margin-right: 3px;
+}
+
+
+.boxRegCookys label {
+    accent-color: #162938;
+    padding-bottom: 10px;
+}
+
+
+
+
+.boxRegCookys a:hover{
+    text-decoration: underline;
+}
+
+.boxLogin button{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+}
+
+.boxLogin {
+    font-size: .9em;
+    color: #162938;
     text-align: center;
-
-    background-image: url("../media/LLamadaBackground.jpg");
-    background-size: cover;
+    font-weight: 500;
+    margin: 25px 0 10px;
 }
-#Sec4{
-    grid-column: 1/4;
-    grid-row: 2;
-    text-align: center;
 
-    background-image: url("../media/HomeBrewBackground.jpeg");
-    background-size: cover;
+.boxRegistro a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 20px;
 }
-article{
-    padding: 0px 20px;
-    text-shadow: 0 0 2 black;
 
+.boxRegistro a:hover{
+    text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
     background-color: rgb(107, 19, 19);
@@ -294,6 +447,8 @@ footer{
     height:10vw;
 
     margin-top:10vh;
+
+
 
 }
 .FooterText{
