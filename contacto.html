@@ -15,49 +15,52 @@
     <header>
         <a href="./index.html"><img id="logo" src="./media/D20Ico.ico" alt="Logo de Iniciativa Crítica" height="90px"></a>
         <h1 id="TituloSuperior">Contacta con Nosotros</h1>
+        <nav>
+            <a class="menuSuperior" href="./index.html">Inicio</a>
+            <a class="menuSuperior" href="./eventos.html">Eventos</a>
+            <a class="menuSuperior" href="./info.html">Cómo jugar</a>
+            <a class="menuSuperior" href="./conocenos.html">Conócenos</a>
+    
+        </nav>
         <!--<a class="RRSS" href="https://twitter.com"><img src="./media/TwitterIcon.ico" alt="Enlace a X(Twitter)" height="40px"></a> /!-->
          <!--<a class="RRSS" href="https://www.facebook.com"><img src="./media/FBLogo.ico" alt="Enlace a facebook" height="40px"></a>/!-->
     </header>
-    <nav>
-        <a class="menuSuperior" href="./index.html">Inicio</a>
-        <a class="menuSuperior" href="./eventos.html">Eventos</a>
-        <a class="menuSuperior" href="./info.html">Cómo jugar</a>
-        <a class="menuSuperior" href="./conocenos.html">Conócenos</a>
-
-    </nav>
+    
 
 
 
     <main>
 
-        <form method="get">
-        <div class="form-login">
-            <div class="box-logUser">
-                <label id="Usuario">Usuario</label>
+        <div class="boxForm">
+        <div class="formularioLogeo">
+            <h2>Login</h2>
+         <form method="get">
+       
+            <div class="boxLogUser">
+                <span class="icon"><ion-icon name="person"></ion-icon></span>
                 <input type="text" id="UsuarioBox" required>
+                <label id="Usuario">Usuario</label>
             </div>
 
 
-            <div class="box-logContra">
-                <label id="contrasena">Contraseña</label>
+            <div class="boxLogContra">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
                 <input type="password" id="contrasenaBox" required>
+                <label id="contrasena">Contraseña</label>
             </div>
 
-            <div class="box-logRecordar">
-                <input type="checkbox" name="recordar" id="recordar">
-                <label id="checkRecordatorio">Recordar Usuario</label>
-            </div>
-
-            <div class="box-logForgot">
+            <div class="boxLogRecordar">
+                <label> <input type="checkbox" name="recordar" id="recordar"
+                 id="checkRecordatorio">Recordar Usuario </label>
                 <a href="#">Olvidaste la contraseña?</a>
             </div>
 
-            <div class="box-logLogin"> 
-                <button type="submit" name="Login">Iniciar</button>
+            <div class="boxLogLogin"> 
+                <button type="submit" class="Login">Iniciar</button>
             </div>
 
-            <div class="box-logRegistro">
-                 <p>No tienes cuenta?</p><a href="#">Registrate</a>
+            <div class="boxLogRegistro">
+                 <p>No tienes cuenta?<a href="#">Registrate</a></p>
             </div>
         </div>
 
@@ -66,21 +69,24 @@
 
 
 
-        <div class="form-registro">
+        <!--<div class="formRegistro">
             
             <div>
-                <label id="Usuario">Usuario</label>
+                <span class="icon"><ion-icon name="person"></ion-icon></span>
                 <input type="text" id="UsuarioBox" required>
+                <label id="Usuario">Usuario</label>
             </div>
             
-            <div class="box-email">
-                <label id="emailText">Email</label>
+            <div class="boxEmail">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
                 <input type="email"  id="email">
+                <label id="emailText">Email</label>
             </div>
 
              <div>
-                <label id="contrasena">Contraseña</label>
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
                 <input type="password" id="contrasenaBox" required>
+                <label id="contrasena">Contraseña</label>
             </div>
     
             <div>
@@ -89,16 +95,16 @@
             </div>
     
     
-            <div class="box-login"> 
+            <div class="boxLogin"> 
                 <button type="submit" name="Login">Registro</button>
             </div>
     
-            <div class="box-registro">
-                <p>Ya tienes cuenta?</p><a href="#">Iniciar Sesión</a>
+            <div class="boxRegistro">
+                <p>Ya tienes cuenta?<a href="#">Iniciar Sesión</a></p>
             </div>
+          </div>
+         </form>
         </div>
-        </form>
-        
     </main>
 
 
@@ -130,6 +136,7 @@
 </footer>
 
 
-
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
