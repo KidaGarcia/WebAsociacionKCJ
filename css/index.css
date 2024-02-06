@@ -22,6 +22,13 @@ header{
     float: right;
     margin-top: 2vh;
     padding-right: 2vw;
+    
+}
+.RRSS2{
+    float: right;
+    margin-top: 2vh;
+    padding-right: 2vw;
+    animation: rotar 3s linear infinite;
 }
 nav{
     position: relative;
@@ -87,6 +94,18 @@ footer{
     position: relative;
     float: left;
     vertical-align: middle;
+  
+}
+#logo:hover{
+    cursor: pointer;
+}
+@keyframes rotar{
+    from{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(-180deg);
+    }
 }
 #TituloSuperior{
     position: relative;
