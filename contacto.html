@@ -15,13 +15,16 @@
     <header>
         <a href="./index.html"><img id="logo" src="./media/D20Ico.ico" alt="Logo de Iniciativa Crítica" height="90px"></a>
         <h1 id="TituloSuperior">Contacta con Nosotros</h1>
-        <nav>
+
+        <div>
+        <nav class="boxNav">
             <a class="menuSuperior" href="./index.html">Inicio</a>
             <a class="menuSuperior" href="./eventos.html">Eventos</a>
             <a class="menuSuperior" href="./info.html">Cómo jugar</a>
             <a class="menuSuperior" href="./conocenos.html">Conócenos</a>
     
         </nav>
+    </div>
         <!--<a class="RRSS" href="https://twitter.com"><img src="./media/TwitterIcon.ico" alt="Enlace a X(Twitter)" height="40px"></a> /!-->
          <!--<a class="RRSS" href="https://www.facebook.com"><img src="./media/FBLogo.ico" alt="Enlace a facebook" height="40px"></a>/!-->
     </header>
@@ -32,6 +35,7 @@
     <main>
 
         <div class="boxForm">
+            <span class="iconoCierre"><ion-icon name="close-outline"></ion-icon></span>
         <div class="formularioLogeo">
             <h2>Login</h2>
          <form method="get">
@@ -63,15 +67,15 @@
                  <p>No tienes cuenta?<a href="#">Registrate</a></p>
             </div>
         </div>
-
+        
             
 
 
 
 
-        <!--<div class="formRegistro">
-            
-            <div>
+        <div class="formRegistro">
+            <h2>Registro</h2>
+            <div class="formRegUser">
                 <span class="icon"><ion-icon name="person"></ion-icon></span>
                 <input type="text" id="UsuarioBox" required>
                 <label id="Usuario">Usuario</label>
@@ -83,13 +87,13 @@
                 <label id="emailText">Email</label>
             </div>
 
-             <div>
+             <div class="boxRegContra">
                 <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
                 <input type="password" id="contrasenaBox" required>
                 <label id="contrasena">Contraseña</label>
             </div>
     
-            <div>
+            <div class="boxRegCookys">
                 <input type="checkbox" name="cookys" id="cookys">
                 <label id="checkCookys">Estoy de acuerdo con los terminos y condiciones</label>
             </div>
@@ -114,7 +118,7 @@
 
 
 
-<footer>
+<!--<footer>
 
 
     <div class="FooterText">
@@ -134,8 +138,8 @@
     </div>
 
 </footer>
-
-
+/!-->
+<script src="/javaScript/contacto.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
