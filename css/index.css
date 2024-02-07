@@ -28,7 +28,7 @@ header{
     float: right;
     margin-top: 2vh;
     padding-right: 2vw;
-    animation: rotar 3s linear infinite;
+
 }
 nav{
     position: relative;
@@ -94,17 +94,17 @@ footer{
     position: relative;
     float: left;
     vertical-align: middle;
-  
+    animation: rotar 3s linear infinite;
 }
 #logo:hover{
     cursor: pointer;
 }
 @keyframes rotar{
     from{
-        transform: rotateY(180deg);
+        transform: rotateZ(0deg);
     }
     to{
-        transform: rotateY(-180deg);
+        transform: rotateZ(360deg);
     }
 }
 #TituloSuperior{
@@ -280,5 +280,15 @@ h2{
     text-align: center;
     width: 50vw;
     position: relative;
-    left: 10vw;
+    left: 12vw;
+}
+#hola{
+  position: relative;
+  text-align: center;
+
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 2vh;
 }
