@@ -119,6 +119,19 @@ article{
 
 }
 
+#dadoRotatorio{
+    animation: rotar 1.5s linear normal;
+    animation-play-state: paused;
+}
+
+@keyframes rotar{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(1360deg);
+    }
+}
 
 footer{
     background-color: rgb(107, 19, 19);
