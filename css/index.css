@@ -292,3 +292,35 @@ h2{
   color: black;
   padding-bottom: 2vh;
 }
+#FotoContacto{
+    height: 55vh;
+    width: 25vw;
+    padding-top: 20px;
+}
+#etiqueta{
+   padding-bottom: 2px;
+   margin-left: 10vw;
+   color: black;
+  font-size: 25px;
+  text-align: center;
+}
+#Contactos{
+  height: 5vh;
+  font-size: 18px;
+  text-align: center;
+}
+#TextoImagen{
+    margin-left: 35vw;
+    font-size: 25px;
+    width: 20vw;
+    color: black;
+    text-shadow: 0 0 1px black;
+
+}
+figcaption{
+    position: relative;
+    bottom: 50vh;
+}
+figure{
+    height: 70vh;
+}
