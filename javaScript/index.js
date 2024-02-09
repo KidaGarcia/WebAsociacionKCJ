@@ -25,20 +25,25 @@ function contactos(){
 	var QueContacto = document.getElementById("Contactos");
 	var Opcion = QueContacto.options[QueContacto.selectedIndex].value;
 	var image = document.getElementById("FotoContacto");
+	var texto = document.getElementById("TextoImagen").textContent;
+	texto = document.getElementById("TextoImagen").innerHTML="Hola :3";
 	if (Opcion == "Empresa") {
 
-		image.src = "media/Empresa.png";
-  
+		image.src = "media/D20Ico.ico";
+		texto = document.getElementById("TextoImagen").innerHTML="Esta página es para saber como contactarnos, puedes elegir entre contactar a Kida(La lista), a Patxecco(El vago), o a Crhis(El currante), a los que hemos creado en conjunto esta página";
 	  } else if (Opcion == "Juan Antonio Sanchez Pacheco") {
   
 		image.src = "media/Patxecco2.png";
-  
+		texto = document.getElementById("TextoImagen").innerHTML="Hola :3";
+		
 	  } else if (Opcion == "Crhistian Castillo Quintero") {
   
 		image.src = "media/Crhis2";
+		texto = document.getElementById("TextoImagen").innerHTML="Hola :3";
 	  }
 	 else if (Opcion == "Kida Garcia Perez") {
   
 		image.src = "media/Kida2";
+		texto = document.getElementById("TextoImagen").innerHTML="Hola :3";
 	  }
 }
