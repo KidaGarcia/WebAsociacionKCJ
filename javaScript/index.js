@@ -19,3 +19,26 @@ const typed = new Typed('.typed', {
 	cursorChar: '', // Caracter para el cursor
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
+
+
+function contactos(){
+	var QueContacto = document.getElementById("Contactos");
+	var Opcion = QueContacto.options[QueContacto.selectedIndex].value;
+	var image = document.getElementById("FotoContacto");
+	if (Opcion == "Empresa") {
+
+		image.src = "media/Empresa.png";
+  
+	  } else if (Opcion == "Juan Antonio Sanchez Pacheco") {
+  
+		image.src = "media/Patxecco2.png";
+  
+	  } else if (Opcion == "Crhistian Castillo Quintero") {
+  
+		image.src = "media/Crhis2";
+	  }
+	 else if (Opcion == "Kida Garcia Perez") {
+  
+		image.src = "media/Kida2";
+	  }
+}
