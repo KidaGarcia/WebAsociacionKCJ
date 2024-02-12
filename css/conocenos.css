@@ -169,6 +169,7 @@ width: 33vw;
     justify-content: space-between;
     text-align: center;
     box-shadow: 0 5px 10px #000;
+    
 }
 
 .card .back .link {
@@ -213,4 +214,18 @@ legend{
     text-align: center;
     font-weight: bolder;
     font-size: 21px;
+}
+#FichaKida{
+    height: 100vh;
+}
+
+#FichaPacheco{
+    height: 100vh;
+}
+
+#FichaCrhis{
+   height: 100vh;
+}
+#FotoDruida{
+    height: 60vh;
 }
