@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciativa Crítica</title>
+    <meta name="Autores" content="Crhistian Castillo, Kida García y Juan Antonio Sánchez Pacheco.">
+    <link rel="shortcut icon" href="./media/D20Ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/info.css">
+    <script type="text/javascript" src="./javaScript/info.js" > </script>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img id="logo" src="./media/D20Ico.ico" alt="Logo de Iniciativa Crítica" height="90px"></a>
+        <h1 id="TituloSuperior">Iniciativa crítica</h1>
+        <a class="RRSS" href="https://twitter.com"><img src="./media/TwitterIcon.ico" alt="Enlace a X(Twitter)" height="40px"></a>
+        <a class="RRSS" href="https://www.facebook.com"><img src="./media/FBLogo.ico" alt="Enlace a facebook" height="40px"></a>
+    </header>
+    <nav>
+        <a class="menuSuperior" href="./index.html">Inicio</a>
+        <a class="menuSuperior" href="./eventos.html">Eventos</a>
+        <a class="menuSuperior" href="./jugar.html">Qué jugar</a>
+        <a class="menuSuperior" href="./conocenos.html">Conócenos</a>
+        <a class="menuSuperior" href="./contacto.html">Contacta con nosotros</a>
+
+    </nav>
+    <main>
+        <section class="secciones" id="Sec1">
+            <h2>¡Lanza tus dados!</h2>
+            <article>
+                <p>Consigue tu tirada al alcance de un botón</p>
+                
+                <img src="./media/D20Ico.ico" alt="Dado rotatorio" id="dadoRotatorio">
+
+                <select name="tiposDados" id="tiposDados">
+                    <option value="4">d4</option>
+                    <option value="6">d6</option>
+                    <option value="10">d10</option>
+                    <option value="12">d12</option>
+                    <option value="20">d20</option>
+                    <option value="100">d100</option>
+                </select>
+
+                <input type="number" name="numDado" id="numDado" placeholder="¿Cuántos dados?" size="15" min="1">
+                <input type="button" value="¡Lanza!" onclick=lanzarDados()>
+                <br><br>
+                <textarea name="resultadoDados" id="resultadoDados" cols="45" rows="7">
+                </textarea>
+            </article>
+        </section>
+        <section class="secciones" id="Sec2">
+            <h2>Básicas de fichas:D&D</h2>
+
+            <table id="dndRazasyClases">
+                <th>Razas</th>
+                <th>Clases</th>
+                <tr>
+                    <td><select id="dndRazasSel">
+                        <option value="human">Humano</option>
+                        <option value="elf">Elfo</option>
+                        <option value="semielf">Semi-elfo</option>
+                        <option value="dwarf">Enano</option>
+                        <option value="tiefling">Tiefling</option>
+                        <option value="halfling">Mediano</option>
+                        <option value="gnome">Gnomo</option>
+                        <option value="semiorc">Semi-orco</option>
+                        <option value="dragonborn">Dragonborn</option>
+                    </select></td>
+                    <td><select id="dndClasesSel">
+                        <option value="fighter">Luchador</option>
+                        <option value="ranger">Explorador</option>
+                        <option value="monk">Monje</option>
+                        <option value="cleric">Clérigo</option>
+                        <option value="wizard">Mago</option>
+                        <option value="paladin">Paladín</option>
+                        <option value="warlock">Brujo</option>
+                        <option value="bard">Bardo</option>
+                        <option value="sorcerer">Hechizero</option>
+                        <option value="druid">Druida</option>
+                        
+                    </select></td>
+            </tr>            
+            </table>
+
+
+            <table class="DndAtt">
+                <th colspan="2">Atributos</th>
+                <tbody>
+                    <tr>
+                        <td>Fuerza (FUE)</td>
+                        <td><input type="number" id="dndFUE" min="1" size="12" placeholder="Fuerza"></td>
+                    </tr>
+                    <tr>
+                        <td>Destreza (DES)</td>
+                        <td><input type="number" id="dndDES" min="1" size="12" placeholder="Destreza"></td>
+                    </tr>
+                    <tr>
+                        <td>Constitucion (CON)</td>
+                        <td><input type="number" id="dndCON" min="1" size="12"  placeholder="Constitucion"></td>
+                    </tr>
+                    <tr>
+                        <td>Inteligencia (INT)</td>
+                        <td><input type="number" id="dndINT" min="1" size="12" placeholder="Inteligencia"></td>
+                    </tr>
+                    <tr>
+                        <td>Sabiduría (SAB)</td>
+                        <td><input type="number" id="dndSAB" min="1" size="12" placeholder="Sabiduría"></td>
+                    </tr>
+                    <tr>
+                        <td>Carisma (CAR)</td>
+                        <td><input type="number" id="dndCAR" min="1" size="12" placeholder="Carisma"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <article>
+        
+            </article>
+        </section>
+        <section class="secciones" id="Sec3">
+            <h2>Básicas de fichas: Vampiro La Mascarada</h2>
+            <article>
+                <table id="vlmClanes">
+                    <th colspan="2">Clanes</th>
+                    <tr>
+                        <td><select id="vlmClanesSel">
+                            <option value="brujah">Brujah</option>
+                            <option value="nosferatu">Nosferatu</option>
+                            <option value="malkavian">Malkavian</option>
+                            <option value="toreador">Toreador</option>
+                            <option value="ventrue">Ventrue</option>
+                            <option value="tremere">Tremere</option>
+                        </select></td>
+                </tr>            
+                </table>
+    
+    
+                <table class="DndAtt">
+                    <th colspan="2">Atributos</th>
+                    <tbody>
+                        <tr>
+                            <td><b>Físicos</b></td>
+                            <td>Fuerza (FUE)</td>
+                            <td><input type="number" id="vlmFUE" min="1" size="12" placeholder="Fuerza"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Destreza (DES)</td>
+                            <td><input type="number" id="vlmDES" min="1" size="12" placeholder="Destreza"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Resisencia (RES)</td>
+                            <td><input type="number" id="vlmRES" min="1" size="12"  placeholder="Resistencia"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Mentales</b></td>
+                            <td>Inteligencia (INT)</td>
+                            <td><input type="number" id="vlmINT" min="1" size="12" placeholder="Inteligencia"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Percepción (PER)</td>
+                            <td><input type="number" id="vlmPER" min="1" size="12" placeholder="Percepción"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Astucia (AST)</td>
+                            <td><input type="number" id="vlmAST" min="1" size="12" placeholder="Astucia"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Sociales</b></td>
+                            <td>Carisma (CAR)</td>
+                            <td><input type="number" id="vlmCAR" min="1" size="12" placeholder="Carisma"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Manipulación (MAN)</td>
+                            <td><input type="number" id="vlmMAN" min="1" size="12" placeholder="Manipulación"></td>
+                        </tr>                        
+                        <tr>
+                            <td></td>
+                            <td>Apariencia (APA)</td>
+                            <td><input type="number" id="vlmAPA" min="1" size="12" placeholder="Apariencia"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <section class="secciones" id="Sec4">
+            <h2>Básicas de fichas: Llamada de Cthulhu</h2>
+            <article>
+                <table class="ldCAtt">
+                    <th colspan="2">Atributos</th>
+                    <tbody>
+                        <tr>
+                            <td>Fuerza (FUE)</td>
+                            <td><input type="number" id="vlmFUE" min="1" size="12" placeholder="Fuerza"></td>
+                        </tr>
+                        <tr>
+                            <td>Destreza (DES)</td>
+                            <td><input type="number" id="vlmDES" min="1" size="12" placeholder="Destreza"></td>
+                        </tr>
+                        <tr>
+                            <td>Constitucion (CON)</td>
+                            <td><input type="number" id="ldCCON" min="1" size="12"  placeholder="Constitucion"></td>
+                        </tr>
+                        <tr>
+                            <td>Tamaño (TAM)</td>
+                            <td><input type="number" id="ldCTAM" min="1" size="12"  placeholder="Tamaño"></td>
+                        </tr>
+                        <tr>
+                            <td>Inteligencia (INT)</td>
+                            <td><input type="number" id="vlmINT" min="1" size="12" placeholder="Inteligencia"></td>
+                        </tr>
+                        <tr>
+                            <td>Poder (POD)</td>
+                            <td><input type="number" id="vlmPOD" min="1" size="12" placeholder="Poder"></td>
+                        </tr>
+                        <tr>
+                            <td>Apariencia (APA)</td>
+                            <td><input type="number" id="vlmAPA" min="1" size="12" placeholder="Apariencia"></td>
+                        </tr>
+                        <tr>
+                            <td>Educación (EDU)</td>
+                            <td><input type="number" id="vlmEDU" min="1" size="12" placeholder="Educación"></td>
+                        </tr>
+                    </tbody>
+                </table>   
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="FooterText">
+            <h4>Creadores</h4>
+            <p>Crhistian Castillo</p>
+            <p>Juan Antonio Sánchez Pacheco</p>
+            <p>Kida García</p>
+        </div>
+        <div class="FooterText">
+            <h4>Contacto</h4>
+            <a href="mailto:justkiddatg@gmail.com">Contacta Aquí</a>
+        </div>
+        <div class="FooterText">
+            <h4>IES VILLABLANCA</h4>
+            <p>C. de Villablanca, 79, Vicálvaro, 28032 Madrid</p>
+            <a href="https://site.educa.madrid.org/ies.villablanca.madrid/">Ver sitio</a>
+        </div>
+    </footer>
+</body>
+</html>
