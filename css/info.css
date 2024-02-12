@@ -122,6 +122,7 @@ article{
 #dadoRotatorio{
     animation: rotar 1.5s linear normal;
     animation-play-state: paused;
+    height: 10vh;
 }
 
 @keyframes rotar{

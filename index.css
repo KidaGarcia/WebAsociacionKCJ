@@ -94,7 +94,7 @@ footer{
     position: relative;
     float: left;
     vertical-align: middle;
-    
+    animation: rotar 3s linear infinite;
 }
 #logo:hover{
     cursor: pointer;
@@ -293,8 +293,8 @@ h2{
   padding-bottom: 2vh;
 }
 #FotoContacto{
-    height: 40vh;
-    width: 20vw;
+    height: 55vh;
+    width: 25vw;
     padding-top: 20px;
 }
 #etiqueta{
@@ -305,8 +305,7 @@ h2{
   text-align: center;
 }
 #Contactos{
-margin-top: 20px;
-  height: 3vh;
+  height: 5vh;
   font-size: 18px;
   text-align: center;
 }
@@ -314,24 +313,14 @@ margin-top: 20px;
     margin-left: 35vw;
     font-size: 25px;
     width: 20vw;
-    color: white;
-    text-shadow: 0 0 1px white;
-    background:transparent;
-    border: 2px solid grey;
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px black;
+    color: black;
+    text-shadow: 0 0 1px black;
 
 }
 figcaption{
     position: relative;
-    bottom: 33vh;
-
+    bottom: 50vh;
 }
 figure{
-    height: 50vh;
-    background-image: url("../media/Fondo.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: 70vh;
 }
