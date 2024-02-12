@@ -1,7 +1,6 @@
 const boxForm = document.querySelector('.boxForm');
-const formularioLogeo = document.querySelector('.boxLogRegistro');
-const formRegistro = document.querySelector('.boxRegistro');
-
+const boxRegistro = document.querySelector('.boxRegistro');
+const boxLogRegistro = document.querySelector('.boxLogRegistro');
 
 boxLogRegistro.addEventListener('click', ()=> {
     boxForm.classList.add('active');
@@ -10,3 +9,4 @@ boxLogRegistro.addEventListener('click', ()=> {
 boxRegistro.addEventListener('click', ()=> {
     boxForm.classList.remove('active');
 })
+

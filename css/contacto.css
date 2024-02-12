@@ -1,21 +1,39 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: rgb(43, 43, 43);
     display: flex;
-    flex-direction: column;
-    background-image:url(/media/_445ed15b-72bd-49c5-9eae-88c9d673339a.jpeg);
+    background-image:url(/media/Fondo7.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
 
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 header{
-    z-index: 5;
-    position: relative;
+    position: fixed;
     top: 0;
+    left: 0;
+    width:100%;
     height: max-content;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: auto;
-    min-height: 5vw;
+    z-index: 99;
+}
 
+header img{
+    user-select: none;
 }
 /**.RRSS{
     float: right;
@@ -25,35 +43,16 @@ header{
 
 
 
-nav{
-    position: relative;
-    clear: both;
 
-    margin-bottom: auto;
-    
-    margin: auto;
-    text-align: center;
-    cursor: pointer;
-    font-weight: 500;
 
-}
-
-.boxNav{
-    margin-left: 65vw;
-    max-width: 100%;
-    bottom: 60px;
-    
-}
 nav a{
-   
+   position: relative;
     color: white;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.4em;
-    position: relative;
-    margin: 15px;
+    font-size: 1.7em;
+    margin-left: 40px;
 }
-
 nav a::after{
     content: '';
     position: absolute;
@@ -81,15 +80,8 @@ nav a:hover::after{
     font-size: larger;
     box-shadow: 0 0 5px black;
 }**/
-main{
-    margin: auto;
-    position: relative;
-    margin-top: 3vw;
-    width: 70vw;
-    height: 90vh;
-    max-height: fit-content;
-    flex: 1;
-}
+
+
 
 
 main .boxForm{
@@ -104,7 +96,7 @@ main .boxForm{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 440px;
+    /**margin-left: 330px;**/
     overflow: hidden;
     transition: height .2s ease;
 }
@@ -113,7 +105,7 @@ main .boxForm{
         height: 520px;
     }
 
-    .boxForm .formularioLogeo{
+    .boxForm.active .formRegistro{
 
         transition: transform .18s ease;
         transform: translateX(0);
@@ -126,7 +118,7 @@ main .boxForm{
         transform: translateX(-400px);
     }
 
-    .boxForm.active .formRegistro {
+    .boxForm .formRegistro {
         position: absolute;
         transition: none;
         transform: translateX(400px);
@@ -138,7 +130,7 @@ main .boxForm{
         transform: translateX(400px);
     }
 
-    .boxForm .iconoCierre{
+    .boxForm .iconoCierre input{
         position: absolute;
         top: 0;
         right: 0;
@@ -202,7 +194,7 @@ main .boxForm{
     outline: none;
     font-size: 1em;
     color: #162938;
-    font-weight: 600;
+    font-weight: 600;  
     padding: 0 35px 0 5px;
 
 }
@@ -289,7 +281,7 @@ main .boxForm{
 
 .formRegistro{
     width: 100%;
-    padding: 40px;
+    padding: 50px;
 }
 
 .formRegistro h2{
@@ -298,12 +290,31 @@ main .boxForm{
     text-align: center;
 }
 
+.formRegistro .iconCierre input{
+    position: absolute;
+    top: -15px;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    font-size: 2em;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
 .formRegUser, .boxEmail, .boxRegContra{
     position: relative;
     width: 100%;
-    height: 50px;
+    height: 40px;
     border-bottom: 2px solid #162938;
-    margin: 30px 0;
+    margin: 30px 0px;
 }
 
 .formRegUser label, .boxRegContra label, .boxEmail label{
@@ -327,7 +338,7 @@ main .boxForm{
 }
 
 
-.boxEmail input:focus~label, .boxEmail input:valid~label{
+.boxEmail input:valid~label, .boxEmail input:focus~label{
     top: -5px;
 }
 
@@ -340,13 +351,13 @@ main .boxForm{
     font-size: 1em;
     color: #162938;
     font-weight: 600;
-    padding: 0 35px 0 5px;
+    padding: 0px 35px 0px 5px;
 
 }
 
 .formRegUser .icon, .boxRegContra .icon, .boxEmail .icon{
     position: absolute;
-    right: 8px;
+    right: 20px;
     font-size: 1.2em;  
     color: #162938;
     line-height: 57px;
@@ -361,7 +372,7 @@ main .boxForm{
     justify-content: space-between;
 }
 
-.boxRegCookys label input{
+.boxRegCookys input{
     accent-color: #162938;
     margin-right: 3px;
 }
@@ -371,8 +382,6 @@ main .boxForm{
     accent-color: #162938;
     padding-bottom: 10px;
 }
-
-
 
 
 .boxRegCookys a:hover{
@@ -407,75 +416,15 @@ main .boxForm{
     padding-left: 20px;
 }
 
+
+
 .boxRegistro a:hover{
     text-decoration: underline;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer{
-    background-color: rgb(107, 19, 19);
-    position:static;
-    
-    bottom: 0;
-    right: 2vw;
-    width: 100%;
-    height:10vw;
-
-    margin-top:10vh;
-
-
-
-}
-.FooterText{
-    color: white;
-    width:33%;
-    float: left;
-    text-align: center;
-}
-.FooterText h4{
-    color: rgb(3, 3, 3);
-    font-size: 20px;
-    font-weight: bold;
-    
-}
 #logo{
     position: relative;
     float: left;
     vertical-align: middle;
-}
-#TituloSuperior {
-    position: relative;
-    float: left;
-    box-sizing: content-box;
-    left: 20vw;
-    width: 40vw;
-    color: white;
-    text-align: center;
-
-    font-size:250%;    
 }
