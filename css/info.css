@@ -79,14 +79,16 @@ main{
 .secciones *{
     margin: auto;
     text-align: center;
+    text-shadow: 0 0 2 black;
 }
 #Sec1{
     grid-column: 1/6;
     grid-row: 1;
     text-align: center;
 
-    background-image: url("../media/DNDBackground.jpeg");
+    background-image: url("../media/WoodenTableBackground.jpg");
     background-size: cover;
+
     
 }
 #Sec2{
@@ -94,8 +96,9 @@ main{
     grid-row: 2;
     text-align: center;
 
-    background-image: url("../media/VampireBackground.jpg");
+    background-image: url("../media/MurderHoboBackGround.jpg");
     background-size: cover;
+    background-position: 5%;
 }
 #Sec3{
     grid-column: 1/6;
@@ -110,8 +113,9 @@ main{
     grid-row: 4;
     text-align: center;
 
-    background-image: url("../media/HomeBrewBackground.jpeg");
+    background-image: url("../media/LLamadaBackground02.jpg");
     background-size: cover;
+
 }
 article{
     padding: 0px 20px;
@@ -133,6 +137,27 @@ article{
         transform: rotateZ(1360deg);
     }
 }
+#DndAtt{
+  
+    margin-right: 10vw;
+}
+.imagenPersonaje{
+    border-width: 4px;
+    border-style: groove;
+    border-color: black;
+    box-shadow: 0 0 10px black;
+}
+#clasePersonaje{
+    float: right;
+    margin-left: 2vw;
+
+}
+#familiaVampiro{
+    float:left;
+    margin-right: 2vw;
+}
+
+
 
 footer{
     background-color: rgb(107, 19, 19);
