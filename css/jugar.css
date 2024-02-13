@@ -72,7 +72,7 @@ main{
     color: white;
     margin: 1vw;
     padding: 4vh 0 10vh 0;
-    text-shadow: 0 0 15px black;
+    text-shadow: 0 0 10px black;
     box-shadow: 0 0 3px black;
 }
 #Sec1{
@@ -123,8 +123,9 @@ article{
 }
 
 /*Textos alternativos*/
+#mostrarDND{
 
-.textos{
+    display: none;
     color: black;
     background-color: white;
 
@@ -133,19 +134,25 @@ article{
 
     padding: 1vw;
 }
-
-#mostrarDND{
-
-    display: none;
-
-}
 #mostrarVampiro{
     display: none;
+    color: black;
+    background-color: white;
 
+    text-shadow: 0 0 10px black;
+    box-shadow: 0 0 3px black;
+
+    padding: 1vw;
 }
 #mostrarLlamada{
     display: none;
+    color: black;
+    background-color: white;
 
+    text-shadow: 0 0 10px black;
+    box-shadow: 0 0 3px black;
+
+    padding: 1vw;
 }
 
 footer{
