@@ -55,7 +55,7 @@
                 <th>Razas</th>
                 <th>Clases</th>
                 <tr>
-                    <td><select id="dndRazasSel">
+                    <td><select id="dndRazasSel" >
                         <option value="human">Humano</option>
                         <option value="elf">Elfo</option>
                         <option value="semielf">Semi-elfo</option>
@@ -66,16 +66,17 @@
                         <option value="semiorc">Semi-orco</option>
                         <option value="dragonborn">Dragonborn</option>
                     </select></td>
-                    <td><select id="dndClasesSel">
+                    <td><select id="dndClasesSel" onchange=cambiarImagen()>
                         <option value="fighter">Luchador</option>
                         <option value="ranger">Explorador</option>
                         <option value="monk">Monje</option>
                         <option value="cleric">Clérigo</option>
                         <option value="wizard">Mago</option>
                         <option value="paladin">Paladín</option>
+                        <option value="rogue">Pícaro</option>
                         <option value="warlock">Brujo</option>
                         <option value="bard">Bardo</option>
-                        <option value="sorcerer">Hechizero</option>
+                        <option value="sorcerer">Hechicero</option>
                         <option value="druid">Druida</option>
                         
                     </select></td>
@@ -89,6 +90,7 @@
                     <tr>
                         <td>Fuerza (FUE)</td>
                         <td><input type="number" id="dndFUE" min="1" size="12" placeholder="Fuerza"></td>
+                        <td rowspan="6"><img src="./media/DNDClasses/Warrior.png" alt="Clase Personaje" class="imagenPersonaje" id="clasePersonaje" width="200vw" height="300vh" ></td>
                     </tr>
                     <tr>
                         <td>Destreza (DES)</td>
@@ -123,7 +125,7 @@
                 <table id="vlmClanes">
                     <th colspan="2">Clanes</th>
                     <tr>
-                        <td><select id="vlmClanesSel">
+                        <td><select id="vlmClanesSel" onchange=cambiarImagenVamp()>
                             <option value="brujah">Brujah</option>
                             <option value="nosferatu">Nosferatu</option>
                             <option value="malkavian">Malkavian</option>
@@ -136,9 +138,11 @@
     
     
                 <table class="DndAtt">
+                    <th></th>
                     <th colspan="2">Atributos</th>
                     <tbody>
                         <tr>
+                            <td rowspan="9"><img src="./media/VampiroClanes/Brujah.jpg" alt="Clase Personaje" class="imagenPersonaje" id="familiaVampiro" width="200vw" height="300vh" ></td>
                             <td><b>Físicos</b></td>
                             <td>Fuerza (FUE)</td>
                             <td><input type="number" id="vlmFUE" min="1" size="12" placeholder="Fuerza"></td>
