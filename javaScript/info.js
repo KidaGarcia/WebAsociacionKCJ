@@ -32,10 +32,57 @@ function lanzarDados(){  //Lanzamiento de varios dados
         document.getElementById("resultadoDados").value+=texto; // Muestra el resultado.
     
     }
+    dadoIMG.style.transform
 
 }
-    function moverDado(){
-        var dadoIMG=document.getElementById("dadoRotatorio");
-        dadoIMG.style.animationPlayState="paused";
-        
+    function cambiarImagenDND(){
+        var seleccion=document.getElementById("dndClasesSel");
+        var imagen=document.getElementById("clasePersonaje");
+        switch(seleccion.value){
+                case "fighter": imagen.src="./media/DNDClasses/Warrior.png";
+                break;
+                case "ranger": imagen.src="./media/DNDClasses/Ranger.jpg";
+                break;
+                case "monk": imagen.src="./media/DNDClasses/Monk.jpg";
+                break;
+                case "cleric": imagen.src="./media/DNDClasses/Cleric.png";
+                break;
+                case "wizard": imagen.src="./media/DNDClasses/Wizard.jpeg";
+                break;
+                case "paladin": imagen.src="./media/DNDClasses/Paladin.png";
+                break;
+                case "rogue": imagen.src="./media/DNDClasses/Rogue.png";
+                break;
+                case "warlock": imagen.src="./media/DNDClasses/Warlock.png";
+                break;
+                case "bard": imagen.src="./media/DNDClasses/Bard.jpg";
+                break;
+                case "sorcerer": imagen.src="./media/DNDClasses/Sorcerer.png";
+                break;
+                case "druid": imagen.src="./media/DNDClasses/druid.png";
+                break;  
+        }
+}
+function cambiarImagenVamp(){
+    var seleccion=document.getElementById("vlmClanesSel");
+    var imagen=document.getElementById("familiaVampiro");
+    switch(seleccion.value){
+            case "brujah": imagen.src="./media/VampiroClanes/Brujah.jpg";
+            break;
+            
+            case "nosferatu": imagen.src="./media/VampiroClanes/Nosferatu.jpg";
+            break;
+
+            case "malkavian": imagen.src="./media/VampiroClanes/Malkavian.png";
+            break;
+
+            case "toreador": imagen.src="./media/VampiroClanes/Toreador.jpg";
+            break;
+
+            case "ventrue": imagen.src="./media/VampiroClanes/Ventrue.jpg";
+            break;
+
+            case "tremere": imagen.src="./media/VampiroClanes/Tremere.jpg";
+            break;
+    }
 }
