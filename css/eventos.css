@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    padding-left: 33vh;
+}
+
+body{
+    background-color: rgb(63, 56, 53);
+    min-height: 100vh;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+}
+header{
+    
+    background-color: rgb(107, 19, 19);
+   
+    top: 0;
+    left: 0;
+    width:100%;
+    height: max-content;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: auto;
+    z-index: 99;
+}
+
+nav a{
+    position: relative;
+     color: white;
+     text-decoration: none;
+     font-weight: 500;
+     font-size: 1.7em;
+     margin-left: 40px;
+ }
+ nav a::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 6px ;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+
+}
+nav a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+    
+}
+
+    main{
+        margin: auto;
+        background-color:#FFFBDB;
+        position: relative;
+        top: 3vw;
+        width: 80vw;
+        height: 120vh;
+        max-height: fit-content;
+        flex: 1;
+    
+    
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 1vw;
+        grid-auto-rows: minmax(100px,auto);
+    
+    }
+    #evento1{
+        grid-row: 2;
+        grid-column: 1;
+        z-index: 1;
+        text-align: center;
+        box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.80);
+    }
+    #evento2{
+        grid-row: 2;
+        grid-column: 2;
+        z-index: 1;
+        text-align: center;
+        box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.80);
+    }
+
+    #evento3{
+        z-index: 2;
+        text-align: center;
+        box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.80);
+    }
+
+
+    .textoImg{
+        width: 100%;
+        background-color: #250b72;
+        color: white;
+        height: 100px;
+    }
+  
+
+
+.eventoLimitado{
+grid-row: 1;
+grid-column: 1/4;
+
+    width: 100%;
+    background-image: url(/media/eventos1.jpg);
+    background-position: center center;
+    background-size: cover;
+   height: 400px;
+   padding-bottom: 50px;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   text-align: center;
+
+}
+    .temporizador .caja p{
+        color: black;
+    }
+
+
+.eventoLimitado h2, .eventoLimitado p{
+    color: white;
+    background: transparent;
+    border: 2px solid rgb(30, 12, 104);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 30px rgba(6, 6, 79, 0.999);
+    margin-bottom: 10px;
+}
+
+.eventoLimitado a{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #250b72;
+    color: white;
+    font-size: 16px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+
+#logo{
+    position: relative;
+    float: left;
+    vertical-align: middle;
+}
+
+
+footer{
+    
+    background-color: rgb(107, 19, 19);
+    position:static;
+    
+    width: 100%;
+    height:12vw;
+
+    margin-top:10vh;
+    position: absolute;
+
+    top: 1500px;
+}
+.FooterText{
+    color: white;
+    width:33%;
+    float: left;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+.FooterText h4{
+    color: rgb(3, 3, 3);
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+.FooterText p{
+    margin-bottom: 2vh; 
+}
+.RRSS{
+    
+    padding: 100px 2vw 0 0;
+}
+#villablanca{
+    
+    color: white;
+}
+#villablanca:visited{
+    
+    color: white;
+}
+
+/** TEMPORIZADOR**/
+.temporizador{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+    bottom: 100px;
+
+}
+
+
+.temporizador .caja{
+    margin: 0px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temporizador .caja div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(21, 10, 101, 0.915);
+    box-shadow: 0px 0px 6px 2px rgb(23, 5, 96) inset;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+.temporizador .caja p{
+    font-size: 11px;
+    font-weight: bold ;
+    color: white;
+}
