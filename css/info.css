@@ -63,7 +63,7 @@ main{
 
 
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(5,1fr);
     grid-gap: 1vw;
     grid-auto-rows: minmax(100px,auto);
 
@@ -71,82 +71,93 @@ main{
 .secciones{
     color: white;
     margin: 1vw;
-    padding: 4vh 0 10vh 0;
-    text-shadow: 0 0 15px black;
+    padding: 2vh 0 5vh 0;
+    text-shadow: 0 0 10px black;
     box-shadow: 0 0 3px black;
+    
+}
+.secciones *{
+    margin: auto;
+    text-align: center;
+    text-shadow: 0 0 2 black;
 }
 #Sec1{
-    grid-column: 1;
+    grid-column: 1/6;
     grid-row: 1;
     text-align: center;
 
-    background-image: url("../media/DNDBackground.jpeg");
+    background-image: url("../media/WoodenTableBackground.jpg");
     background-size: cover;
-
-
 
     
 }
 #Sec2{
-    grid-column: 2;
-    grid-row: 1;
+    grid-column: 1/6;
+    grid-row: 2;
     text-align: center;
 
-    background-image: url("../media/VampireBackground.jpg");
+    background-image: url("../media/MurderHoboBackGround.jpg");
     background-size: cover;
+    background-position: 5%;
 }
 #Sec3{
-    grid-column: 3;
-    grid-row: 1;
+    grid-column: 1/6;
+    grid-row: 3;
     text-align: center;
 
     background-image: url("../media/LLamadaBackground.jpg");
     background-size: cover;
 }
-
-
 #Sec4{
-    grid-column: 1/4;
-    grid-row: 3;
+    grid-column: 1/6;
+    grid-row: 4;
     text-align: center;
 
-    background-image: url("../media/HomeBrewBackground.jpeg");
+    background-image: url("../media/LLamadaBackground02.jpg");
     background-size: cover;
+
 }
 article{
     padding: 0px 20px;
-    text-shadow: 0 0 4px black;
+    text-shadow: 0 0 2 black;
 
 }
-.mostrarDatos{
-    grid-column: 1/4;
+
+#dadoRotatorio{
+    animation: rotar 1.5s linear normal;
+    animation-play-state: paused;
+    height: 10vh;
 }
 
-/*Textos alternativos*/
-
-.textos{
-    color: black;
-    background-color: white;
-
-    text-shadow: 0 0 10px black;
-    box-shadow: 0 0 3px black;
-
-    padding: 1vw;
+@keyframes rotar{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(1360deg);
+    }
 }
-
-#mostrarDND{
-
-    display: none;
-
+#DndAtt{
+  
+    margin-right: 10vw;
 }
-#mostrarVampiro{
-    display: none;
-
+.imagenPersonaje{
+    border-width: 4px;
+    border-style: groove;
+    border-color: black;
+    box-shadow: 0 0 10px black;
 }
-#mostrarLlamada{
-    display: none;
+#clasePersonaje{
+    float: right;
+    margin-left: 2vw;
 
 }
+#familiaVampiro{
+    float:left;
+    margin-right: 2vw;
+}
+
+
 
 footer{
     background-color: rgb(107, 19, 19);
