@@ -38,34 +38,89 @@
         <div class="formularioLogeo">
             <h2>Iniciar Sesión</h2>
          <form method="get">
-            <span class="iconoCierre"> <input type="reset" value="X"></span>
        
             <div class="boxLogUser">
-                <span class="icon"><ion-icon name="person"></ion-icon></span>
+                <span class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACCElEQVR4nO2Zz0obURTGf2OLpi/QuBI3Lly22gdw0624skEUQaHpSlqDfQHFVWteQoX2Abop9RF04cptEkFREFMoYmvKhTMg004wOndyz3h+8EGYG5L7fffm/jkBwzAMwzAMwzAMwzAMw/BNBEwAc8B7kXv9UtoKyzBQB1pAJ0WubQsoUyAiYA342cV4Um2gVoQZUQJ2ezCe1I58hkoiYPsB5mN91ToT1jIwH2sVZTwHLjMMoC2LqBrqGZqP9RklDADHHgJoaVkLJj2Yj+UOS8Ez5zGACgqoeQxAxW6w6jGADyig4jGAWRQw4TGAFyggAhoezDe1bIPIlTbrAD7xyI/CZZRRyzAAVzV6tNfhL5p++0lKUtS4r/ltzQWRmEgOR+0ejF/KtFc78v+jLFfaZhfjDVnt3SJaWCI50FRulcUr8qxQI24Yxj+U5LL0BqgCH0VVeebahigQEfAK2AAOgOs7bIHuPfvAupTXVC6Mg8ACcJjBSfAIWAGeoYBIaoLd/gC9r5qh1wRHgT0PxpP6AYwQGFPASQ7mY50BrwmEt8DvHM3Hct+53G/zS8CfPpiPdQO865f5GelAp89yAzCdt/kx4CIA87evz+N5mX8iB5VOYHJ9eppHAPMBmE3TYh4BfAvAaJq+5xHAaQBG03SeRwC/AjCaJtc372wCVwGYTepKbp2GYXBn/gIcmHnJ2f8WNwAAAABJRU5ErkJggg==" width="30px"></span>
                 <input type="text" id="UsuarioBox" required>
-                <label id="Usuario">Usuario</label>
+                <label id="Usuario">NOMBRES Y APELLIDOS</label>
+            </div>
+
+            <div class="boxLogUser">
+                <span class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABXklEQVR4nO2YvUrEQBCAPx/AUuQwanHIYSkiiJ6ojZaKtU8h+Ci+xBFEUCt9AHt9CQvBHChoMxJMcZjNmp+7y47OBwMhZLLzsbPZsGAYhmEYRo5FIAaGgAQaQ+AS6PkkXgIoVEpGWmvkEokDKE4qxsAlEnI7SUEkLhFRGjnaLshEmszIFbAFzAJzwIXGGbkGZhz5C8C9JpFDilnXJNL1iMyXyE9bsirbkxDZ8AzYLZHfryGyMwmRU8+AJ5paa9MjsqdJZNUjsqZJ5M4j8qBpsUv24p/slswNZrEL8Ax0RnI72b1pt5U0FZFs82tzI5RxiHwAyyO56fWnNpFH4MCRn/66PGlY7DfAfolB02duK34ofqM/DpE34KjG4MfAe0itdUZ9zkMSiRqILIUkIoFHjrYLMpG/cED3mm+s74NhURaxS6Sn8BB7hQKi7GA4CaBQKYgkm4lCCcMwDMP4t3wBnnvRGyaUH0wAAAAASUVORK5CYII=" width="30px"></span>
+                <input type="text" id="UsuarioDNI" required>
+                <label id="Usuario">DNI</label>
+            </div>
+
+            <div class="boxLogUser">
+                <span class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA0UlEQVR4nO3UwWkCQRSH8R96E5ICBLEFIZAalBDwYgu2YAu2kBZyySFVBARbCKsWEMGbsrIwC0vY1cmqwcN+8GDY9/h/zOwwNNwTL1gjvbBWGJUJVlcIT0MlZYK8eSlpVU7e+ES/RnAX7zGCrHaYoR0R3MIU218ZlYJXfIf1Es8nwgf4CrMbTGIEGR3MsccBb3gszJb1H0pyKgU5T1gUbsY4VBK+LcLMuZyTjVY445/If/RnQU4PH6GydRW1BbE0gvpHdPPHbnQlSYLh+Y02/BdHOA2bqc6k+4oAAAAASUVORK5CYII="></span>
+                <input type="emails" id="UsuarioMail" required>
+                <label id="Usuario">CORREO ELECTRONICO</label>
+            </div>
+
+            <div class="boxEstado">
+                <label id="civil">ESTADO CIVIL</label> <br>
+               <input type="radio" name="estado">
+                <label id="labelEstado">Soltero/a</label>
+                <input type="radio" name="estado">
+                <label id="labelEstado">Casado/a</label>
+                <input type="radio" name="estado">
+                <label id="labelEstado">Divorciado/a</label>
             </div>
 
 
-            <div class="boxLogContra">
-                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                <input type="password" id="contrasenaBox" required>
-                <label id="contrasena">Contraseña</label>
+            <div id="boxTelefono">
+                <span class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIElEQVR4nO3VwSoFURwH4A+h2FAUz3ElS0l5CgsWNrJjKxs2XoDuAygegFhZiMJKdq4dC5KUhY2uTo263c4dZM50F/dXv83M1NfMnPM/dNIGWcQdrjBaFrqFekOrZaBzTWjoJyqp4ZMIHHqGrpTwWws4dD4l/JIDP2AwFXyRA4dOpoLXctBb9KaCx/HeAp6ROBsRNAyS5BnEfRP8hOEy8Al8NOGn6C8DX4l88r3Ug+Q7uxF8WwnpwUEE38nuNSZstSkMFIX34TCCH2Eoe2YaN9n1Ryyhu6iVfhzBn3Gdc7BUinrz/R9GauxIrWLkv3hP9n/rf+ylgrIc2ed5rSl4yNR+CS8oOGHRreccLKGbEmYMqzjP5vprtt1mU6KdtG++AA/oqGgeE678AAAAAElFTkSuQmCC" width="30px"></span>
+                <input type="number" id="contrasenaBox" required>
+                <label id="contrasena">NUMERO DE TELEFONO</label>
             </div>
+
+
+            <div class="boxDia">
+        
+                <select multiple name="dia" required>
+                    <option value="">Lunes</option>
+                    <option value="">martes</option>
+                    <option value="">Miercoles</option>
+                    <option value="">Jueves</option>
+                    <option value="">Viernes</option>
+                </select>
+                <label id="Usuario">DISPONIBILIDAD</label>
+            </div>
+
+
+            <div id="boxDeEleccion">
+                <input type="checkbox">Participar en actividades
+                <input type="checkbox">Preparar actividades
+                <input type="checkbox">Acompañar a un menor
+                <input type="checkbox">Curiosidad por la asociación <br>
+                <label for="other" id="otros">Otros:</label><br>
+                <textarea id="other" name="other" rows="4" cols="50"></textarea>
+            </div>
+
+
 
             <div class="boxLogRecordar">
-                <label> <input type="checkbox" name="recordar" id="recordar"
-                 id="checkRecordatorio">Recordar Usuario </label>
-                <a href="#">Olvidaste la contraseña?</a>
+
+                <label> <input type="checkbox" name="recordar" id="recordar">Aceptar Terminos y Condiciones.</label>
+
             </div>
+
+
+
+
+
+           
 
             <div class="boxLogLogin"> 
                 <a href="/eventos.html"><button type="submit" class="Login">Iniciar</button></a>
+                <button type="reset" class="Login">Limpiar</button>
             </div>
 
-            <div class="boxLogRegistro">
-                 <p>No tienes cuenta?<a href="#">Registrate</a></p>
-            </div>
+            
+         
+        
+
+            <script src="/javaScript/contacto.js"> </script>
         </div>
     
             

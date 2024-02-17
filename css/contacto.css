@@ -39,7 +39,9 @@ header img{
 
 
 
-
+main{
+    margin-top: 50px;
+}
 
 
 nav a{
@@ -77,8 +79,8 @@ nav a:hover::after{
 
 main .boxForm{
     position: relative;
-    width: 400px;
-    height: 440px;
+    width: 900px;
+    height: 750px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
@@ -92,92 +94,98 @@ main .boxForm{
     transition: height .2s ease;
 }
 
-    .boxForm.active {
-        height: 520px;
-    }
-
-    .boxForm.active .formRegistro{
-
-        transition: transform .18s ease;
-        transform: translateX(0);
-
-    }
-
-
-    .boxForm.active .formularioLogeo {
-        transition: none;
-        transform: translateX(-400px);
-    }
-
-    .boxForm .formRegistro {
-        position: absolute;
-        transition: none;
-        transform: translateX(400px);
-    }
-
-
-    .boxForm .formRegistro{
-        position: absolute;
-        transform: translateX(400px);
-    }
-
-    .boxForm .iconoCierre input{
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 45px;
-        height: 45px;
-        background: #162938;
-        font-size: 2em;
-        color:white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-bottom-left-radius: 20px;
-        cursor: pointer;
-        z-index: 1;
-    }
 
 .formularioLogeo{
-    width: 100%;
+    width: 800px;
     padding: 40px;
 }
 
 .formularioLogeo h2{
     font-size: 2em;
-    color:#162938;
+    color:#000000;
     text-align: center;
+    margin-bottom: 100px;
 }
 
-.boxLogUser, .boxLogContra{
+#boxDeEleccion{
     position: relative;
-    width: 100%;
-    height: 50px;
-    border-bottom: 2px solid #162938;
-    margin: 30px 0;
+    width: 70%;
+    height: 90px;
+    border-bottom: 2px solid #0f0f0f;
+    margin: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    bottom: 40px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    left: 90px;
 }
 
-.boxLogUser label, .boxLogContra label{
+#boxDeEleccion input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-left: 8px;
+}
+
+ #boxDeEleccion #Motivacion{
+    top: 20px;
+}
+
+#boxDeEleccion #Motivacion {
+ position: relative;
+}
+
+#boxDeEleccion textarea {
+    width: 100%;
+    background: transparent;
+    background-color: rgba(128, 128, 128, 0.3);
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #000000;
+    font-weight: 600;  
+    padding: 0 35px 0 5px;
+}
+
+
+.boxLogUser, .boxEstado, #boxTelefono, .boxDia{
+    position: relative;
+    width: 40%;
+    height: 50px;
+    border-bottom: 2px solid #0f0f0f;
+   margin: 20px;
+   margin-bottom: 20px;
+    display: inline-block;
+    bottom: 90px;
+}
+
+.boxLogUser label, #boxTelefono label, .boxDia label, #boxEntar label{
     position: absolute;
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: #162938;
+    color: #000000;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
+}
+
+.boxDia label{
+  padding-bottom: 90px;
 }
 
 .boxLogUser input:focus~label, .boxLogUser input:valid~label{
     top: -5px;
 }
 
-.boxLogContra input:focus~label, .boxLogContra input:valid~label{
+#boxTelefono input:focus~label, #boxTelefono input:valid~label{
     top: -5px;
 }
 
-.boxLogUser input, .boxLogContra input{
+.boxLogUser input, #boxTelefono input, .boxDia select, .boxEntar input{
     width:100% ;
     height: 100%;
     background: transparent;
@@ -190,7 +198,7 @@ main .boxForm{
 
 }
 
-.boxLogUser .icon, .boxLogContra .icon{
+.boxLogUser .icon, #boxTelefono .icon{
     position: absolute;
     right: 8px;
     font-size: 1.2em;  
@@ -198,13 +206,25 @@ main .boxForm{
     line-height: 57px;
 }
 
+
+.boxLogUser .icon img, #boxTelefono .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;  
+    color: #162938;
+    line-height: 57px;
+}
+
+
 .boxLogRecordar{
     font-size: .9em;
-    color: #162938;
+    color: #000000;
     font-weight: 500;
     margin: -15px 0px 15px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    left: 250px;
 }
 
 .boxLogRecordar label input{
@@ -230,7 +250,7 @@ main .boxForm{
 }
 
 .boxLogLogin button{
-    width: 100%;
+    width: 20%;
     height: 45px;
     background: #162938;
     border: none;
@@ -240,6 +260,9 @@ main .boxForm{
     font-size: 1em;
     color: white;
     font-weight: 500;
+    margin-top: 0px;
+    margin-left: 150px;
+    display: inline;
 }
 
 .boxLogRegistro {
@@ -262,7 +285,6 @@ main .boxForm{
 }
 
 
-/**Segunda parte del formulario**/
 
 
 

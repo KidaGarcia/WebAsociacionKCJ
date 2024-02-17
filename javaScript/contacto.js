@@ -1,12 +1,14 @@
-const boxForm = document.querySelector('.boxForm');
-const boxRegistro = document.querySelector('.boxRegistro');
-const boxLogRegistro = document.querySelector('.boxLogRegistro');
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-boxLogRegistro.addEventListener('click', ()=> {
-    boxForm.classList.add('active');
-})
+    var usuarioBox = document.querySelector('#UsuarioBox').value;
+    var usuarioDNI = document.querySelector('#UsuarioDNI').value;
+    var usuarioMail = document.querySelector('#UsuarioMail').value;
+    var contrasenaBox = document.querySelector('#contrasenaBox').value;
 
-boxRegistro.addEventListener('click', ()=> {
-    boxForm.classList.remove('active');
-})
+    alert("UsuarioBox: " + usuarioBox + "\n" +
+          "UsuarioDNI: " + usuarioDNI + "\n" +
+          "UsuarioMail: " + usuarioMail + "\n" +
+          "ContrasenaBox: " + contrasenaBox);
+});
 
